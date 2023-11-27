@@ -1,0 +1,44 @@
+.imageCard {
+    text-align: center;
+    margin: 20px;
+}
+.imageCard h2 {
+    text-align: center;
+    
+}
+.image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.commentSection {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    gap: 10px;
+    /* Adjust as needed */
+}
+
+
+.commentSection label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.commentSection .name input,
+.commentSection .title input {
+    width: 40%;
+    padding: 8px;
+    margin-bottom: 2px;
+}
+
+.commentSection .comment input {
+    width: 60%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import "./photoOfTheDay.css"
+import POTDDRAFT from "../assets/POTDDRAFT.webp"
 
 const photoOfTheDay = ({ imageUrl, altText }) => {
     const [name, setName] = useState('');
@@ -8,19 +10,19 @@ const photoOfTheDay = ({ imageUrl, altText }) => {
     return (
         <div className="imageCard">
             <h2>IMAGE OF THE DAY!</h2>
-            <img src={imageUrl} alt={altText} className="image" />
+            <img src={POTDDRAFT} alt={altText} className="image" />
             <div className="commentSection">
-                <label>
+                <label className='name'>
                     Name:
                     <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
                 </label>
-                <label>
+                <label className="title">
                     Title:
                     <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
-                </label>
-                <label>
+                </label >
+                <label className="comment">
                     Comment:
-                    <textarea value={comment} onChange={(e) => setComment(e.target.value)} />
+                    <input value={comment} onChange={(e) => setComment(e.target.value)} />
                 </label>
             </div>
         </div>

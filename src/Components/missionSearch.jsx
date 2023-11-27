@@ -1,22 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Curiosity from "../assets/Curiosity.webp";
+import Opportunity from "../assets/Opportunity.jpeg";
+import Spirit from "../assets/Spirit.jpeg";
+import "./missionSearch.css"
+
 
 const missionSearch = () => {
 
     const rovers = [
         {
           name: 'Curiosity',
-          image: 'PIC OF CURIOSITY',
+          image: Curiosity,
           link: 'ROUTE',
         },
         {
           name: 'Opportunity',
-          image: 'PIC OF OPPORTUNITY',
+          image: Opportunity,
           link: 'ROUTE',
         },
         {
           name: 'Spirit',
-          image: 'PIC OF SPIRIT',
+          image: Spirit,
           link: 'ROUTE',
         },
       ];

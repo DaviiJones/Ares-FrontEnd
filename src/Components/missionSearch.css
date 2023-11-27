@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.marsRoverList h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.marsRoverList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly; /* Adjust as needed */
+    align-items: center;
+}
+
+.rover-item {
+    text-align: center;
+    flex: 1;
+}
+
+.rover-item h2 {
+    margin: 0;
+}
+
+.rover-item img {
+    width: 200px;
+    height: 200px;
+
+}
