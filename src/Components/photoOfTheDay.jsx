@@ -12,8 +12,8 @@ const photoOfTheDay = ({ imageUrl, altText }) => {
             <h2>IMAGE OF THE DAY!</h2>
             <img src={POTDDRAFT} alt={altText} className="image" />
             <div className="commentSection">
-                <label className='name'>
-                    Name:
+                <label className="reviewer">
+                    Reviewer:
                     <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
                 </label>
                 <label className="title">
