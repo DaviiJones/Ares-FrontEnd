@@ -1,7 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+
 import NavBar from "./Components/NavBar";
-import Home from "./Pages/Home";
 import FourOFour from "./Pages/fourOFour";
+import Home from "./Pages/Home";
 import Missions from './Pages/Missions';
 import SolarSystemSearch from './Pages/SolarSystemSearch';
 
