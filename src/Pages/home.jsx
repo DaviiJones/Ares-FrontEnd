@@ -1,17 +1,18 @@
 import React from "react";
-import PhotoOfTheDay from "../Components/photoOfTheDay";
 import MissionSearch from "../Components/missionSearch";
-
-const home = () => {
-    return (
-        <div>
-        <h1>STARGAZERS...</h1>
+import PhotoOfTheDay from "../Components/photoOfTheDay";
+import "./Home.css"
+const Home = () => {
+  return (
+      <>
+      <div>
+        <h1>STARGAZERS!</h1>
+        <h3>Powered by NASA</h3>
         <PhotoOfTheDay />
         <MissionSearch />
-
-        </div>
-        
-    );
+      </div>
+    </>
+  );
 };
 
-export default home;
+export default Home;

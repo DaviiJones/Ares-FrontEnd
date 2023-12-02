@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-// import { makeApiRequest } 
+import "./Missions.css"
 
 const Missions = () => {
   const { roverName } = useParams();
@@ -24,15 +24,14 @@ const Missions = () => {
   return (
     <div>
       <h1>MISSIONS!</h1>
+      <h2>Click Here to search past missions in SPACE!</h2>
       <div className="mission-details">
         <label>
           Select Rover:
           <select value={roverName} onChange={(e) => handleRoverChange(e.target.value)}>
-            {roverNames.map((rover) => (
-              <option key={rover} value={rover}>
-                {rover}
-              </option>
-            ))}
+              <option value="/missions/curiosity">Curiosity</option>
+              <option value="/missions/opportunity">Opportunity</option>
+              <option value="/missions/spirit">Spirit</option>
           </select>
         </label>
         <label>

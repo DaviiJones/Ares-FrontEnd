@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import { makeApiRequest } 
+import "./SolarSystemSearch.css"
 
 const SolarSystemSearch = () => {
   const [searchQuery, setSearchQuery] = useState('');
